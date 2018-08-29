@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <TextView
+        android:id="@+id/alarmDate"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFF4081"
+        android:fontFamily="sans-serif"
+        android:text="날짜" />
+
+    <TextView
+        android:id="@+id/alarmTime"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/alarmDate"
+        android:textColor="#f76d1d"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:text="시간" />
+
+    <TextView
+        android:id="@+id/alarmStatus"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/alarmDate"
+        android:layout_below="@+id/alarmDate"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="상태" />
+
+    <TextView
+        android:id="@+id/alarmValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/alarmDate"
+        android:layout_below="@+id/alarmStatus"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="값" />
+
+    <ImageView
+        android:id="@+id/alarmImage"
+        android:layout_width="37dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/alarmDate"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+</RelativeLayout>

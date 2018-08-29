@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/freshdashboard"
+    tools:context=".DashboardFragment">
+
+    <TextView
+        android:id="@+id/HeartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="41dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="◆  HEART RATE : "
+        android:textColor="#FFFF4081"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Temperate"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/HeartRate"
+        android:layout_marginTop="88dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="◆  Temperate : "
+        android:textColor="#8b8682"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="138dp"
+        android:layout_marginStart="55dp"
+        android:alpha="0.15"
+        android:src="@drawable/house" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="334dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="81dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold" />
+
+</RelativeLayout>

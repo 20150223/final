@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationFragment">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif"
+        android:text="NAME"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFA508A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/birthText"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sexText"
+        android:layout_marginBottom="249dp"
+        android:fontFamily="sans-serif"
+        android:text="B-DATE"
+        android:textColor="#FFFA508A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sexText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="201dp"
+        android:layout_marginStart="58dp"
+        android:fontFamily="sans-serif"
+        android:text="SEX"
+        android:textColor="#FFFA508A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bloodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sexText"
+        android:layout_marginBottom="161dp"
+        android:fontFamily="sans-serif"
+        android:text="BLOOD TYPE"
+        android:textColor="#FFFA508A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/uniqeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sexText"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="sans-serif"
+        android:text="UNIQUENESS"
+        android:textColor="#FFFA508A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_below="@+id/nameText"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:text="Jessica"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <TextView
+        android:id="@+id/b-date"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="256dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="1930.02.08"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="212dp"
+        android:layout_marginEnd="114dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="F" />
+
+    <TextView
+        android:id="@+id/blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sex"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignTop="@+id/bloodText"
+        android:text="O" />
+
+    <TextView
+        android:id="@+id/uniqe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/uniqeText"
+        android:layout_marginEnd="47dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="High blood pressure" />
+
+</RelativeLayout>
